@@ -10,7 +10,6 @@ QVariantMap SendTaskSrv::stringJsonToQVariantMap(const QString &stringJson)
 	{
 		return QVariantMap();
 	}
-
 	return result;
 }
 
