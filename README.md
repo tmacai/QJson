@@ -1,6 +1,7 @@
 # QJson
+
 //Json字符串转Map
-QVariantMap stringJsonToQVariantMap(const QString &stringJson)
+QVariantMap SendTaskSrv::stringJsonToQVariantMap(const QString &stringJson)
 {
 	bool ok;
 	QJson::Parser parser;
@@ -14,7 +15,7 @@ QVariantMap stringJsonToQVariantMap(const QString &stringJson)
 }
 
 //Map转Json字符串
-QString mapToStringJson(const QVariantMap &map)
+QString SendTaskSrv::mapToStringJson(const QVariantMap &map)
 {
 	QJson::Serializer serializer;
 	bool ok;
